@@ -27,8 +27,8 @@ are some preliminary ideas and notes about its construction.
   * scala3
   * scala-native
   * scopt
-  * coulomb
   * os-lib
+  * coulomb
   * circe
   * circe-yaml
   * scala-xml
