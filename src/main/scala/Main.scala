@@ -5,13 +5,12 @@ import scalanative.unsafe.*
 
 import coulomb.*
 import coulomb.syntax.*
-import cats.syntax.either._
-import io.circe._
-import io.circe.generic.auto._
-import io.circe.syntax._
-import io.circe.scalayaml._
-import io.circe.scalayaml.syntax._
-import scala.language.implicitConversions
+import cats.syntax.either.*
+import io.circe.*
+import io.circe.generic.auto.*
+import io.circe.syntax.*
+import io.circe.scalayaml.*
+import io.circe.scalayaml.syntax.*
 import coulomb.units.si.*
 
 @extern
