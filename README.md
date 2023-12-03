@@ -30,7 +30,6 @@ are some preliminary ideas and notes about its construction.
   * os-lib
   * coulomb
   * circe
-  * circe-yaml
   * scala-xml
 
 ### General requirments
