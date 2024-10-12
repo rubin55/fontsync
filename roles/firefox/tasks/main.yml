@@ -1,0 +1,14 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_sans is defined
+      - font_size_serif is defined
+      - font_size_ratio_firefox_mono is defined
+      - font_size_ratio_firefox_sans is defined
+      - font_size_ratio_firefox_serif is defined
+      - zoom_level_ratio_firefox is defined
+
+- name: Configuring firefox
+  debug:
+    msg: "Placeholder role: firefox"

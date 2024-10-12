@@ -1,0 +1,11 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_sans is defined
+      - font_size_ratio_jetbrains_mono is defined
+      - font_size_ratio_jetbrains_sans is defined
+
+- name: Configuring jetbrains
+  debug:
+    msg: "Placeholder role: jetbrains"

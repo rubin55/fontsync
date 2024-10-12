@@ -1,0 +1,11 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_sans is defined
+      - font_size_ratio_qt_mono is defined
+      - font_size_ratio_qt_sans is defined
+
+- name: Configuring qt
+  debug:
+    msg: "Placeholder role: qt"

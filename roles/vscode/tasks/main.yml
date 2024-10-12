@@ -1,0 +1,10 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_ratio_vscode_mono is defined
+      - zoom_level_ratio_vscode is defined
+
+- name: Configuring vscode
+  debug:
+    msg: "Placeholder role: vscode"

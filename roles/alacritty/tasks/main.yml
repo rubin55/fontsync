@@ -1,0 +1,9 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_ratio_alacritty_mono is defined
+
+- name: Configuring alacritty
+  debug:
+    msg: "Placeholder role: alacritty"

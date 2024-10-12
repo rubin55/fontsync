@@ -1,0 +1,13 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_sans is defined
+      - font_size_ratio_x11_mono is defined
+      - font_size_ratio_x11_sans is defined
+      - x11_dpi_setting is defined
+      - x11_cursor_size is defined
+
+- name: Configuring x11
+  debug:
+    msg: "Placeholder role: x11"

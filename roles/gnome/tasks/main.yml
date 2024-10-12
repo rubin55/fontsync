@@ -1,0 +1,14 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_sans is defined
+      - font_size_serif is defined
+      - font_size_ratio_gnome_mono is defined
+      - font_size_ratio_gnome_sans is defined
+      - font_size_ratio_gnome_serif is defined
+      - zoom_level_ratio_gnome is defined
+
+- name: Configuring gnome
+  debug:
+    msg: "Placeholder role: gnome"

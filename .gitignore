@@ -1,20 +1,5 @@
-# Scala.
-**/*.class
-**/*.log
-
-# Scala FMT.
-.scalafmt.conf
-
-# SBT.
-**/.bsp
-
-# Metals.
-**/.metals
-**/metals.sbt
-**/.bloop
-
-# Maven.
-**/target
+# Ansible.
+**/*.retry
 
 # Idea.
 **/*.iml

@@ -1,0 +1,15 @@
+- name: desktop
+  gather_facts: false
+  hosts:
+    - local
+  roles:
+    - alacritty
+    - emacs
+    - firefox
+    - gnome
+    - jetbrains
+    - neovide
+    - qt
+    - x11
+    - vscode
+    - zed
