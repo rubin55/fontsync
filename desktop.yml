@@ -10,6 +10,6 @@
     - jetbrains
     - neovide
     - qt
-    - x11
     - vscode
+    - x11
     - zed
