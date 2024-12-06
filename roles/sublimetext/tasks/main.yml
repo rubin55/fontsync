@@ -1,0 +1,9 @@
+- name: "Check if dependent variables are defined"
+  assert:
+    that:
+      - font_size_mono is defined
+      - font_size_ratio_sublimetext_mono is defined
+
+- name: Configuring sublimetext
+  debug:
+    msg: "Placeholder role: sublimetext"
