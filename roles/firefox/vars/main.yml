@@ -1,4 +1,4 @@
-font_size_ratio_firefox_mono: 1
-font_size_ratio_firefox_sans: 1.333
-font_size_ratio_firefox_serif: 1.333
-zoom_level_ratio_firefox: 1
+firefox_mono_font_size_ratio: 1
+firefox_sans_font_size_ratio: 1.333
+firefox_serif_font_size_ratio: 1.333
+firefox_zoom_level: 1

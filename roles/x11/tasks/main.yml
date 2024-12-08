@@ -1,10 +1,10 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_sans is defined
-      - font_size_ratio_x11_mono is defined
-      - font_size_ratio_x11_sans is defined
+      - global_mono_font_size is defined
+      - global_sans_font_size is defined
+      - x11_mono_font_size_ratio is defined
+      - x11_sans_font_size_ratio is defined
       - x11_dpi_setting is defined
       - x11_cursor_size is defined
 

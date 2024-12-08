@@ -1,4 +1,4 @@
-font_size_ratio_gnome_mono: 1
-font_size_ratio_gnome_sans: 1
-font_size_ratio_gnome_serif: 1.25
-zoom_level_ratio_gnome: 2
+gnome_mono_font_size_ratio: 1
+gnome_sans_font_size_ratio: 1
+gnome_serif_font_size_ratio: 1.25
+gnome_zoom_level: 2

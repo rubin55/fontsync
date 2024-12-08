@@ -1,13 +1,13 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_sans is defined
-      - font_size_serif is defined
-      - font_size_ratio_gnome_mono is defined
-      - font_size_ratio_gnome_sans is defined
-      - font_size_ratio_gnome_serif is defined
-      - zoom_level_ratio_gnome is defined
+      - global_mono_font_size is defined
+      - global_sans_font_size is defined
+      - global_serif_font_size is defined
+      - gnome_mono_font_size_ratio is defined
+      - gnome_sans_font_size_ratio is defined
+      - gnome_serif_font_size_ratio is defined
+      - gnome_zoom_level is defined
 
 - name: Configuring gnome
   ansible.builtin.debug:

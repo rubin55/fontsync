@@ -1,9 +1,9 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_ratio_vscode_mono is defined
-      - zoom_level_ratio_vscode is defined
+      - global_mono_font_size is defined
+      - vscode_mono_font_size_ratio is defined
+      - vscode_zoom_level is defined
 
 - name: Configuring vscode
   ansible.builtin.debug:

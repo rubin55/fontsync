@@ -1,10 +1,10 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_sans is defined
-      - font_size_ratio_qt_mono is defined
-      - font_size_ratio_qt_sans is defined
+      - global_mono_font_size is defined
+      - global_sans_font_size is defined
+      - qt_mono_font_size_ratio is defined
+      - qt_sans_font_size_ratio is defined
 
 - name: Configuring qt
   ansible.builtin.debug:

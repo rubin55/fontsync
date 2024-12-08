@@ -1,13 +1,13 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_sans is defined
-      - font_size_serif is defined
-      - font_size_ratio_firefox_mono is defined
-      - font_size_ratio_firefox_sans is defined
-      - font_size_ratio_firefox_serif is defined
-      - zoom_level_ratio_firefox is defined
+      - global_mono_font_size is defined
+      - global_sans_font_size is defined
+      - global_serif_font_size is defined
+      - firefox_mono_font_size_ratio is defined
+      - firefox_sans_font_size_ratio is defined
+      - firefox_serif_font_size_ratio is defined
+      - firefox_zoom_level is defined
 
 - name: Configuring firefox
   ansible.builtin.debug:

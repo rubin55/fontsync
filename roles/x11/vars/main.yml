@@ -1,2 +1,4 @@
-font_size_ratio_x11_mono: 1
-font_size_ratio_x11_sans: 1
+x11_mono_font_size_ratio: 1
+x11_sans_font_size_ratio: 1
+x11_dpi_setting: 192
+x11_cursor_size: 48

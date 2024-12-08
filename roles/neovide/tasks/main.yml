@@ -1,8 +1,8 @@
 - name: "Check if dependent variables are defined"
   ansible.builtin.assert:
     that:
-      - font_size_mono is defined
-      - font_size_ratio_neovide_mono is defined
+      - global_mono_font_size is defined
+      - neovide_mono_font_size_ratio is defined
 
 - name: Configuring neovide
   ansible.builtin.debug:
