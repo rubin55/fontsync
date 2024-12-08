@@ -6,6 +6,10 @@
       - jetbrains_mono_font_size_ratio is defined
       - jetbrains_sans_font_size_ratio is defined
 
-- name: Configuring jetbrains
+- name: Configuring jetbrains mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: jetbrains"
+    msg: "JetBrains mono font size: {{ (global_mono_font_size * jetbrains_mono_font_size_ratio) | round }}"
+
+- name: Configuring jetbrains sans font size
+  ansible.builtin.debug:
+    msg: "JetBrains sans font size: {{ (global_sans_font_size * jetbrains_sans_font_size_ratio) | round }}"

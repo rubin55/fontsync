@@ -9,6 +9,18 @@
       - firefox_serif_font_size_ratio is defined
       - firefox_zoom_level is defined
 
-- name: Configuring firefox
+- name: Configuring firefox mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: firefox"
+    msg: "Firefox mono font size: {{ (global_mono_font_size * firefox_mono_font_size_ratio) | round | int }}"
+
+- name: Configuring firefox sans font size
+  ansible.builtin.debug:
+    msg: "Firefox sans font size: {{ (global_sans_font_size * firefox_sans_font_size_ratio) | round | int }}"
+
+- name: Configuring firefox serif font size
+  ansible.builtin.debug:
+    msg: "Firefox serif font size: {{ (global_serif_font_size * firefox_serif_font_size_ratio) | round | int }}"
+
+- name: Configuring firefox zoom level
+  ansible.builtin.debug:
+    msg: "Firefox zoom level: {{ firefox_zoom_level }}"

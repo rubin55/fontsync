@@ -4,6 +4,6 @@
       - global_mono_font_size is defined
       - neovide_mono_font_size_ratio is defined
 
-- name: Configuring neovide
+- name: Configuring neovide mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: neovide"
+    msg: "Neovide mono font size: {{ (global_mono_font_size * neovide_mono_font_size_ratio) | round }}"

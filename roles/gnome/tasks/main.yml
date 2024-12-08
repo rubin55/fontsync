@@ -9,6 +9,18 @@
       - gnome_serif_font_size_ratio is defined
       - gnome_zoom_level is defined
 
-- name: Configuring gnome
+- name: Configuring gnome mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: gnome"
+    msg: "Gnome mono font size: {{ (global_mono_font_size * gnome_mono_font_size_ratio) | round }}"
+
+- name: Configuring gnome sans font size
+  ansible.builtin.debug:
+    msg: "Gnome sans font size: {{ (global_sans_font_size * gnome_sans_font_size_ratio) | round }}"
+
+- name: Configuring gnome serif font size
+  ansible.builtin.debug:
+    msg: "Gnome serif font size: {{ (global_serif_font_size * gnome_serif_font_size_ratio) | round }}"
+
+- name: Configuring gnome zoom level
+  ansible.builtin.debug:
+    msg: "Gnome zoom level: {{ gnome_zoom_level }}"

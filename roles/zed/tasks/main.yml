@@ -6,6 +6,10 @@
       - zed_mono_font_size_ratio is defined
       - zed_sans_font_size_ratio is defined
 
-- name: Configuring zed
+- name: Configuring zed mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: zed"
+    msg: "Zed mono font size: {{ (global_mono_font_size * zed_mono_font_size_ratio) | round }}"
+
+- name: Configuring zed sans font size
+  ansible.builtin.debug:
+    msg: "Zed sans font size: {{ (global_sans_font_size * zed_sans_font_size_ratio) | round }}"

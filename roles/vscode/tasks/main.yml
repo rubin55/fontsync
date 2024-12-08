@@ -5,6 +5,10 @@
       - vscode_mono_font_size_ratio is defined
       - vscode_zoom_level is defined
 
-- name: Configuring vscode
+- name: Configuring vscode mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: vscode"
+    msg: "VSCode mono font size: {{ (global_mono_font_size * vscode_mono_font_size_ratio) | round }}"
+
+- name: Configuring vscode zoom level
+  ansible.builtin.debug:
+    msg: "VSCode zoom level: {{ vscode_zoom_level }}"

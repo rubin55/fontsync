@@ -4,6 +4,6 @@
       - global_mono_font_size is defined
       - sublimetext_mono_font_size_ratio is defined
 
-- name: Configuring sublimetext
+- name: Configuring sublimetext mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: sublimetext"
+    msg: "SublimeText mono font size: {{ (global_mono_font_size * sublimetext_mono_font_size_ratio) | round }}"

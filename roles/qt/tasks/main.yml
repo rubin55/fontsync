@@ -6,6 +6,10 @@
       - qt_mono_font_size_ratio is defined
       - qt_sans_font_size_ratio is defined
 
-- name: Configuring qt
+- name: Configuring qt mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: qt"
+    msg: "QT mono font size: {{ (global_mono_font_size * qt_mono_font_size_ratio) | round }}"
+
+- name: Configuring qt sans font size
+  ansible.builtin.debug:
+    msg: "QT sans font size: {{ (global_sans_font_size * qt_sans_font_size_ratio) | round }}"

@@ -8,6 +8,18 @@
       - x11_dpi_setting is defined
       - x11_cursor_size is defined
 
-- name: Configuring x11
+- name: Configuring x11 mono font size
   ansible.builtin.debug:
-    msg: "Placeholder role: x11"
+    msg: "X11 mono font size: {{ (global_mono_font_size * x11_mono_font_size_ratio) | round }}"
+
+- name: Configuring x11 sans font size
+  ansible.builtin.debug:
+    msg: "X11 sans font size: {{ (global_sans_font_size * x11_sans_font_size_ratio) | round }}"
+
+- name: Configuring x11 dpi setting
+  ansible.builtin.debug:
+    msg: "X11 dpi setting: {{ x11_dpi_setting }}"
+
+- name: Configuring x11 cursor size
+  ansible.builtin.debug:
+    msg: "X11 cursor size: {{ x11_cursor_size }}"
