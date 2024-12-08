@@ -1,5 +1,5 @@
 - name: "Check if dependent variables are defined"
-  assert:
+  ansible.builtin.assert:
     that:
       - font_size_mono is defined
       - font_size_sans is defined
@@ -10,5 +10,5 @@
       - zoom_level_ratio_gnome is defined
 
 - name: Configuring gnome
-  debug:
+  ansible.builtin.debug:
     msg: "Placeholder role: gnome"
