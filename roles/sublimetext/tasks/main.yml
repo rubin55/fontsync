@@ -4,6 +4,14 @@
       - global_mono_font_size is defined
       - sublimetext_mono_font_size_ratio is defined
 
+- name: Configuring sublimetext lg font size
+  ansible.builtin.debug:
+    msg: "SublimeText lg font size: {{ (global_sans_font_size * sublimetext_lg_font_size_ratio) | round(1, 'common') }}"
+
+- name: Configuring sublimetext sm font size
+  ansible.builtin.debug:
+    msg: "SublimeText sm font size: {{ (global_mono_font_size * sublimetext_sm_font_size_ratio) | round(2, 'common') }}"
+
 - name: Configuring sublimetext mono font size
   ansible.builtin.debug:
-    msg: "SublimeText mono font size: {{ (global_mono_font_size * sublimetext_mono_font_size_ratio) | round }}"
+    msg: "SublimeText mono font size: {{ (global_mono_font_size * sublimetext_mono_font_size_ratio) | round(1, 'common') }}"

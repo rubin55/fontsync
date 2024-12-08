@@ -6,4 +6,4 @@
 
 - name: Configuring alacritty mono font size
   ansible.builtin.debug:
-    msg: "Alacritty mono font size: {{ (global_mono_font_size * alacritty_mono_font_size_ratio) | round }}"
+    msg: "Alacritty mono font size: {{ (global_mono_font_size * alacritty_mono_font_size_ratio) | round(1, 'common') }}"

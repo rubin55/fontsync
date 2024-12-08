@@ -11,15 +11,15 @@
 
 - name: Configuring gnome mono font size
   ansible.builtin.debug:
-    msg: "Gnome mono font size: {{ (global_mono_font_size * gnome_mono_font_size_ratio) | round }}"
+    msg: "Gnome mono font size: {{ (global_mono_font_size * gnome_mono_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring gnome sans font size
   ansible.builtin.debug:
-    msg: "Gnome sans font size: {{ (global_sans_font_size * gnome_sans_font_size_ratio) | round }}"
+    msg: "Gnome sans font size: {{ (global_sans_font_size * gnome_sans_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring gnome serif font size
   ansible.builtin.debug:
-    msg: "Gnome serif font size: {{ (global_serif_font_size * gnome_serif_font_size_ratio) | round }}"
+    msg: "Gnome serif font size: {{ (global_serif_font_size * gnome_serif_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring gnome zoom level
   ansible.builtin.debug:

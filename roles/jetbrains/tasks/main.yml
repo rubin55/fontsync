@@ -8,8 +8,8 @@
 
 - name: Configuring jetbrains mono font size
   ansible.builtin.debug:
-    msg: "JetBrains mono font size: {{ (global_mono_font_size * jetbrains_mono_font_size_ratio) | round }}"
+    msg: "JetBrains mono font size: {{ (global_mono_font_size * jetbrains_mono_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring jetbrains sans font size
   ansible.builtin.debug:
-    msg: "JetBrains sans font size: {{ (global_sans_font_size * jetbrains_sans_font_size_ratio) | round }}"
+    msg: "JetBrains sans font size: {{ (global_sans_font_size * jetbrains_sans_font_size_ratio) | round(1, 'common') }}"

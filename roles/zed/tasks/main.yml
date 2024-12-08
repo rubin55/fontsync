@@ -8,8 +8,8 @@
 
 - name: Configuring zed mono font size
   ansible.builtin.debug:
-    msg: "Zed mono font size: {{ (global_mono_font_size * zed_mono_font_size_ratio) | round }}"
+    msg: "Zed mono font size: {{ (global_mono_font_size * zed_mono_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring zed sans font size
   ansible.builtin.debug:
-    msg: "Zed sans font size: {{ (global_sans_font_size * zed_sans_font_size_ratio) | round }}"
+    msg: "Zed sans font size: {{ (global_sans_font_size * zed_sans_font_size_ratio) | round(1, 'common') }}"

@@ -10,11 +10,11 @@
 
 - name: Configuring x11 mono font size
   ansible.builtin.debug:
-    msg: "X11 mono font size: {{ (global_mono_font_size * x11_mono_font_size_ratio) | round }}"
+    msg: "X11 mono font size: {{ (global_mono_font_size * x11_mono_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring x11 sans font size
   ansible.builtin.debug:
-    msg: "X11 sans font size: {{ (global_sans_font_size * x11_sans_font_size_ratio) | round }}"
+    msg: "X11 sans font size: {{ (global_sans_font_size * x11_sans_font_size_ratio) | round(1, 'common') }}"
 
 - name: Configuring x11 dpi setting
   ansible.builtin.debug:

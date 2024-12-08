@@ -5,6 +5,6 @@ all:
       ansible_connection: local
       ansible_python_interpreter: auto_silent
   vars:
-    global_mono_font_size: 12
-    global_sans_font_size: 12
-    global_serif_font_size: 12
+    global_mono_font_size: 11
+    global_sans_font_size: 11
+    global_serif_font_size: 11
